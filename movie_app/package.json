@@ -13,10 +13,10 @@
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build -e movie_app",
     "deploy":"gh-pages -d build",
     "predeploy":"npm run build"
 
   },
-  "homepage": "https://gyool0424.github.io/react_nomad_coder"
+  "homepage": "https://gyool0424.github.io/react_nomad_coder/"
 }
