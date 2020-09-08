@@ -15,14 +15,14 @@ function Movie({ id, year, title, summary, poster, genres }) {
                 genres
             }
         }}>
-            <div class="movie">
+            <div className="movie">
                 <img src={poster} alt={title} title={title}></img>
-                <div class="data">
-                    <h3 class="movie__title">{title}</h3>
-                    <h5 class="movie__year">{year}</h5>
+                <div className="data">
+                    <h3 className="movie__title">{title}</h3>
+                    <h5 className="movie__year">{year}</h5>
                     <ul className="movie__genres">
                         {genres.map((genres, index) => <li key={index} className="genres__genre">{genres}</li>)}</ul>
-                    <p class="move__summary">{summary.slice(0, 180)}...</p>
+                    <p className="move__summary">{summary.slice(0, 180)}...</p>
                 </div>
             </div>
         </Link>
@@ -32,7 +32,7 @@ function Movie({ id, year, title, summary, poster, genres }) {
 
 }
 
-Movie.PropTypes = {
+Movie.propTypes = {
     id: PropTypes.number.isRequired,
     year: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
