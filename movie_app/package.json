@@ -2,21 +2,21 @@
   "name": "movie_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gyool0424.github.io/react_nomad_coder/",
   "dependencies": {
     "axios": "^0.20.0",
     "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "0.9.5"
   },
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build -e movie_app",
-    "deploy":"gh-pages -d build",
-    "predeploy":"npm run build"
-
-  },
-  "homepage": "https://gyool0424.github.io/react_nomad_coder/"
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build -e movie_app",
+    "predeploy": "npm run build"
+  }
 }
